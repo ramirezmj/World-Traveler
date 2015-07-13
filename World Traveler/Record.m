@@ -10,4 +10,10 @@
 
 @implementation Record
 
++(NSString *)keyPathForResponseObject
+{
+    // Where to start looking from the JSON response of the Foursquare API
+    return @"response";
+}
+
 @end

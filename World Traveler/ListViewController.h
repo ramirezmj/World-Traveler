@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ListViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+- (IBAction)refreshBarButtonItemPressed:(UIBarButtonItem *)sender;
 
 @end
 

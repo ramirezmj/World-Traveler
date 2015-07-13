@@ -7,7 +7,6 @@
 //
 
 #import "Menu.h"
-#import "NSManagedObject.h"
 
 
 @implementation Menu

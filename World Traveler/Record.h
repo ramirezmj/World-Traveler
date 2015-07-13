@@ -7,7 +7,9 @@
 //
 
 #import "MMRecord.h"
+#import "CoreData+MagicalRecord.h"
 
 @interface Record : MMRecord
+
 
 @end

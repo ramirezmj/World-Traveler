@@ -8,6 +8,19 @@
 
 #import "FourSquareSessionManager.h"
 
+static NSString *const FourSquareBaseURLSTRING = @"https://api.foursquare.com/v2/";
+
 @implementation FourSquareSessionManager
+
++ (instancetype)sharedClient
+{
+    static FourSquareSessionManager *_sharedClient = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _sharedClient = [[FourSquareSessionManager alloc] initWithBaseURL:[NSURL URLWithString:FourSquareBaseURLSTRING]];
+    });
+    
+    return _sharedClient;
+}
 
 @end

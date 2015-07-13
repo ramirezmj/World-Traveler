@@ -8,10 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import "Record.h"
+#import "CoreData+MagicalRecord.h"
 
 @class Contact, FSCategory, Location, Menu;
 
-@interface Venue : NSManagedObject
+@interface Venue : Record
 
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSString * id;

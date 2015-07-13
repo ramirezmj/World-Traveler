@@ -10,4 +10,6 @@
 
 @interface FourSquareSessionManager : AFHTTPSessionManager
 
++(instancetype) sharedClient;
+
 @end

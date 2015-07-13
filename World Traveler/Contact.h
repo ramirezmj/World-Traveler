@@ -8,10 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import "Record.h"
+#import "CoreData+MagicalRecord.h"
 
-@class NSManagedObject;
+//@class NSManagedObject;
 
-@interface Contact : NSManagedObject
+@interface Contact : Record
 
 @property (nonatomic, retain) NSString * formattedPhone;
 @property (nonatomic, retain) NSString * phone;

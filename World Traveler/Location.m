@@ -7,7 +7,6 @@
 //
 
 #import "Location.h"
-#import "NSManagedObject.h"
 
 
 @implementation Location

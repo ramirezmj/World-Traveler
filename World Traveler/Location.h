@@ -8,10 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import "Record.h"
+#import "CoreData+MagicalRecord.h"
 
 @class NSManagedObject;
 
-@interface Location : NSManagedObject
+@interface Location : Record
 
 @property (nonatomic, retain) NSString * address;
 @property (nonatomic, retain) NSString * cc;

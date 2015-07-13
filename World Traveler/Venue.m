@@ -22,4 +22,10 @@
 @dynamic location;
 @dynamic menu;
 
+// Method Overwrite
++(NSString *) keyPathForResponseObject
+{
+    return @"response.venues";
+}
+
 @end

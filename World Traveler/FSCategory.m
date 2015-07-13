@@ -7,7 +7,6 @@
 //
 
 #import "FSCategory.h"
-#import "NSManagedObject.h"
 
 
 @implementation FSCategory

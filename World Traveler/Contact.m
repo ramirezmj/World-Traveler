@@ -7,7 +7,6 @@
 //
 
 #import "Contact.h"
-#import "NSManagedObject.h"
 
 
 @implementation Contact

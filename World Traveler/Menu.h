@@ -8,10 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import "Record.h"
+#import "CoreData+MagicalRecord.h"
 
-@class NSManagedObject;
+//@class NSManagedObject;
 
-@interface Menu : NSManagedObject
+@interface Menu : Record
 
 @property (nonatomic, retain) NSString * label;
 @property (nonatomic, retain) NSString * url;
